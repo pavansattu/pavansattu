@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasan Software Solutions - Hiring Now!</title>
+    <base href="https://rasansoftwaresolutions.com/">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>RASAN SOFTWARE SOLUTIONS</h1>
+    </header>
+
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">COMPANY</a>
+        <a href="#">SERVICES</a>
+        <a href="#">CASE STUDIES</a>
+        <a href="#">CAREERS</a>
+        <a href="#">BLOG</a>
+        <a href="#">CONTACT US</a>
+        
+        <form>
+            <input type="text" placeholder="Search">
+            <input type="submit" value="Search">
+        </form>
+
+        <script>
+            // Get the search form and toggle its visibility
+            const searchForm = document.getElementById('searchForm');
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('a[href="#"]').addEventListener('click', function(event) {
+                    event.preventDefault();
+                    searchForm.style.display = (searchForm.style.display === 'none' || searchForm.style.display === '') ? 'block' : 'none';
+                });
+            });
+        </script>
+    </nav>
+
+    <section>
+        <h2>Welcome to our website!</h2>
+        <p>This is the main content of your website.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
